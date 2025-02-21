@@ -1,0 +1,121 @@
+/* Genel Stil Ayarları */
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Google Fonts'tan ekleyebilirsiniz */
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* #root kapsayıcı */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header (Başlık) */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #333;
+}
+
+/* Navigation (Sekme Grubu) */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  position: fixed;
+
+  /* Header yüksekliğine göre */
+  z-index: 900;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+/* Ana İçerik Alanı */
+main {
+  margin-top: 120px;
+  /* Header + Nav yüksekliği */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Takım Kartları */
+.team-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.team-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Formlar */
+form {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-right: 8px;
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
